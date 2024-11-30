@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Updated font family */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background: url('https://t3.ftcdn.net/jpg/03/39/66/32/360_F_339663218_UIEaNpnUeCjwevbrsnNlJbdhqUWsfn90.jpg') no-repeat center center/cover; /* Single background image for the entire page */
+    background-attachment: fixed; /* Parallax effect for background */
+}
+
+/* Remove default margin and padding */
+html, body {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section with Background Image and Overlay */
+.hero-section {
+    background: url('https://t3.ftcdn.net/jpg/03/39/66/32/360_F_339663218_UIEaNpnUeCjwevbrsnNlJbdhqUWsfn90.jpg') no-repeat center center/cover; 
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 100px 0;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Card Styling with Hover Effects */
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Increased shadow effect */
+}
+
+/* About Section */
+#about {
+    color: white;
+    padding: 100px 0; /* Top ani bottom spacing maintain */
+    text-align: center;
+    position: relative;
+    width: 100%; /* Full section width cover */
+   /* box-sizing: border-box; */
+    background: rgba(0, 0, 0, 0.2); /* Background color */
+    overflow: hidden; 
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
+
+
+
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 30px;
+}
+
+.back-to-top:hover {
+    background-color: #ff6f61;
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Adjust container settings globally */
+.container {
+    max-width: 100%; /* Ensures content spans correctly */
+    margin: 0 auto;
+    padding: 0 15px; /* Standard spacing */
+    box-sizing: border-box;
+}
+
+/* Social Links Section */
+#social-links a {
+    font-size: 30px; /* Adjust the size of the icons */
+    margin: 0 10px; /* Space between the icons */
+    color: #000; /* Set the color of the icons to black */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#social-links a:hover {
+    color: #ebe8e8; /* Change the color on hover if needed */
+}
